@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RoostersController">
+   <children>
+      <SplitPane dividerPositions="0.8497652582159625" orientation="VERTICAL" prefHeight="640.0" prefWidth="420.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="520.0" prefWidth="418.0">
+               <children>
+                  <TabPane layoutY="-1.0" prefHeight="537.0" prefWidth="420.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="About">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </Tab>
+                      <Tab text="Deals">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="414.0" prefWidth="411.0" />
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="169.0" prefWidth="418.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
