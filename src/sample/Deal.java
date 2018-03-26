@@ -42,6 +42,10 @@ public class Deal {
 
     }
 
+    public void redeem(){
+        this.valid = false;
+    }
+
     public String getName() {
         return name;
     }

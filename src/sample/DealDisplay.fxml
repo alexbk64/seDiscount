@@ -21,7 +21,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="txtEstabName" editable="false" layoutX="-37.0" layoutY="-6.0" prefHeight="37.0" prefWidth="147.0" promptText="Establishment" scaleX="2.0" scaleY="2.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" translateX="125.0" translateY="50.0" />
+                        <TextField fx:id="txtEstabName" editable="false" layoutX="-37.0" layoutY="-6.0" prefHeight="37.0" prefWidth="147.0" promptText="Establishment" scaleX="2.0" scaleY="2.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" text="Drapers" translateX="125.0" translateY="50.0" />
                         <ImageView fx:id="imgEstabLogo" fitHeight="100.0" fitWidth="100.0" layoutX="-187.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true" x="500.0" y="25.0">
                            <image>
                               <Image url="@../images/stock-vector-example-stamp-424524877.jpg" />
@@ -31,7 +31,7 @@
                         <TextField fx:id="activeDealLink" editable="false" layoutX="62.0" layoutY="415.0" minHeight="30.0" minWidth="300.0" text="Active Promotions/Discounts" />
                         <TextFlow layoutX="9.0" layoutY="154.0" prefHeight="243.0" prefWidth="403.0">
                            <children>
-                              <TextField fx:id="txtEstabDesc" editable="false" minHeight="140.0" minWidth="401.0" prefHeight="140.0" prefWidth="401.0" promptText="Large Area of Information about the establishment" style="-fx-border-color: #9fe1b1; -fx-border-width: 2px;" />
+                              <TextField fx:id="txtEstabDesc" editable="false" minHeight="140.0" minWidth="401.0" prefHeight="140.0" prefWidth="401.0" promptText="Large Area of Information about the establishment" style="-fx-border-color: #9fe1b1; -fx-border-width: 2px;" text="Modern university venue serving drinks" />
                            </children></TextFlow>
                         <Button fx:id="btnReturn" layoutX="23.0" layoutY="506.0" mnemonicParsing="false" onAction="#returnLogin" style="-fx-background-color: #9FE1B1;" text="&lt;" />
                      </children></AnchorPane>
@@ -51,7 +51,7 @@
                           <content>
                             <AnchorPane fx:id="anchDeal" minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="402.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;">
                                  <children>
-                                    <TextArea fx:id="taView" layoutX="14.0" layoutY="10.0" prefHeight="185.0" prefWidth="374.0" wrapText="true" />
+                                    <TextArea fx:id="taView" editable="false" layoutX="14.0" layoutY="10.0" prefHeight="185.0" prefWidth="374.0" wrapText="true" />
                                  </children></AnchorPane>
                           </content>
                         </ScrollPane>

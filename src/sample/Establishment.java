@@ -29,13 +29,13 @@ public class Establishment {
     public void removeDeal(Deal deal){
         deals.remove(deal);
     }
-    public Deal searchDeal(String name){
-        for(Deal deal : deals){
-            if(deal.getName().equals(name)){
+    public Deal searchDeal(String name)  {
+        for (Deal deal : deals) {
+            if (deal.getName().equals(name)) {
                 return deal;
             }
         }
-        throw new UnsupportedOperationException();
+        throw new ItemNotFoundException();
     }
 
     public String getName() {

@@ -22,7 +22,9 @@ public class Catalogue {
                 return est;
             }
         }
-        throw new UnsupportedOperationException();
+        System.out.println("Cannot Find Estab");
+        //return null;
+        throw new ItemNotFoundException();
     }
 
     public void deleteEstablishment(String name){

@@ -63,6 +63,7 @@ public class DealDisplayController {
     }
 
     public void viewDrinkDeal() throws IOException{
+        taView.setText("");
         BufferedReader inStream = new BufferedReader(new FileReader("src/test/drink.txt"));
         String d = "";
         for(int i=1;i<=5;i++) {d += inStream.readLine() + "\n";}
@@ -70,7 +71,8 @@ public class DealDisplayController {
         taView.setText(d);
     }
 
-    public void viewFoodDeal(){
+    public void viewFoodDeal()throws IOException{
+        taView.setText("");
         BufferedReader inStream = new BufferedReader(new FileReader("src/test/food.txt"));
         String d = "";
         for(int i=1;i<=5;i++) {d += inStream.readLine() + "\n";}
@@ -79,7 +81,20 @@ public class DealDisplayController {
     }
 
     public void redeemDeal(ActionEvent actionEvent) throws Exception {
-        
+        Catalogue cat = Catalogue.getInstance();
+        Establishment est = cat.findEstablishmentByName("test");
+        if(taView.getText().startsWith("drink")){
+            Deal d = est.searchDeal("drink");
+            if(!(d == null)){
+            d.redeem();
+            est.removeDeal(d); }
+        }
+        else{
+            Deal d = est.searchDeal("food");
+            if(!(d == null)){
+            d.redeem();
+            est.removeDeal(d); }
+        }
     }
 
 }
