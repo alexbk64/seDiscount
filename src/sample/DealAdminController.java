@@ -12,6 +12,8 @@ import java.util.Calendar;
 
 public class DealAdminController {
     @FXML
+    TextField txtEstabName;
+    @FXML
     TextField txtDealName;
     @FXML
     DatePicker StartDate;
@@ -34,6 +36,6 @@ public void btnSubmitDeal(ActionEvent actionEvent){
     c2.set(eDate.getYear(),eDate.getMonthValue()-1,eDate.getDayOfMonth());
     Date end = c2.getTime();
 
-    Deal nDeal = new Deal(txtDealName.getText(),start,end,txtPromoCode.getText(),txtSummary.getText());
+    Deal nDeal = new Deal(txtDealName.getText(),start,end,txtPromoCode.getText(),txtSummary.getText(),txtEstabName.getText());
 }
 }

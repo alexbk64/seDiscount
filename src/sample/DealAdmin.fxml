@@ -86,17 +86,19 @@
                 <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="414.0" prefWidth="411.0" style="-fx-background-color: WHITE;">
                   <children>
-                     <TextField fx:id="txtPromoCode" layoutX="141.0" layoutY="439.0" prefHeight="39.0" prefWidth="252.0" />
+                     <TextField fx:id="txtPromoCode" layoutX="141.0" layoutY="459.0" prefHeight="39.0" prefWidth="252.0" />
                      <Button fx:id="btnReturnLogin" layoutX="272.0" layoutY="528.0" mnemonicParsing="false" onAction="#btnSubmitDeal" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #9FE1B1;" text="Submit Deal" />
-                     <Text layoutX="36.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Name" />
-                     <Text layoutX="36.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Code" />
-                     <TextField fx:id="txtDealName" layoutX="141.0" layoutY="32.0" prefHeight="39.0" prefWidth="252.0" />
-                     <Text layoutX="36.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="90.205078125" />
-                     <Text layoutX="36.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="87.205078125" />
-                     <Text layoutX="35.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary" wrappingWidth="84.205078125" />
-                     <TextArea fx:id="txtSummary" layoutX="141.0" layoutY="261.0" prefHeight="131.0" prefWidth="252.0" />
-                     <DatePicker fx:id="StartDate" layoutX="141.0" layoutY="112.0" prefHeight="39.0" prefWidth="252.0" />
-                     <DatePicker fx:id="EndDate" layoutX="141.0" layoutY="189.0" prefHeight="39.0" prefWidth="252.0" />
+                     <Text layoutX="35.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Name" />
+                     <Text layoutX="36.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Code" />
+                     <TextField fx:id="txtDealName" layoutX="141.0" layoutY="101.0" prefHeight="39.0" prefWidth="252.0" />
+                     <Text layoutX="35.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="90.205078125" />
+                     <Text layoutX="36.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="87.205078125" />
+                     <Text layoutX="35.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary" wrappingWidth="84.205078125" />
+                     <TextArea fx:id="txtSummary" layoutX="141.0" layoutY="306.0" prefHeight="131.0" prefWidth="252.0" />
+                     <DatePicker fx:id="StartDate" layoutX="141.0" layoutY="165.0" prefHeight="39.0" prefWidth="252.0" />
+                     <DatePicker fx:id="EndDate" layoutX="141.0" layoutY="239.0" prefHeight="39.0" prefWidth="252.0" />
+                     <TextField fx:id="txtEstabName" layoutX="141.0" layoutY="39.0" prefHeight="39.0" prefWidth="250.0" />
+                     <Text layoutX="32.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estab name" wrappingWidth="96.205078125" />
                   </children></AnchorPane>
                 </content>
             </Tab>

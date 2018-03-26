@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Deal {
 
-
+    Catalogue cat = Catalogue.getInstance();
     private String name;
     private String summary;
     private List<String> reviews;
@@ -15,13 +15,14 @@ public class Deal {
     private Date validEnd;
     private boolean valid;
 
-    public Deal(String name, Date sDate, Date eDate, String pCode, String summary){
+    public Deal(String name, Date sDate, Date eDate, String pCode, String summary, String estab){
         this.name = name;
         this.summary = summary;
         promoCode = pCode;
         validStart = sDate;
         validEnd = eDate;
         expireDeal(this);
+        cat.findEstablishmentByName(estab);
     }
 
     public void expireDeal(Deal deal){
