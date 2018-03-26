@@ -8,7 +8,7 @@ public class Establishment {
     private String description;
     private boolean verified;
 
-    public Establishment(String name) {
+    public Establishment(String name,String description) {
         this.name = name;
     }
 

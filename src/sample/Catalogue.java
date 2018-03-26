@@ -36,4 +36,8 @@ public class Catalogue {
         throw new UnsupportedOperationException();
     }
 
+    public void addEstablishment(String name, String description){
+        Establishment est = new Establishment(name, description);
+        establishmentList.add(est);
+    }
 }

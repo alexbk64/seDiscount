@@ -22,7 +22,8 @@ public class Deal {
         validStart = sDate;
         validEnd = eDate;
         expireDeal(this);
-        cat.findEstablishmentByName(estab);
+        Establishment est = cat.findEstablishmentByName(estab);
+        est.addDeal(this);
     }
 
     public void expireDeal(Deal deal){
