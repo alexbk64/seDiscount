@@ -1,15 +1,16 @@
 package sample;
 
-import java.util.List;
+import java.util.*;
 
 public class Establishment {
-    private List<Deal> deals;
+    private ArrayList<Deal> deals;
     private String name;
     private String description;
     private boolean verified;
 
     public Establishment(String name,String description) {
         this.name = name;
+        this.deals = new ArrayList<Deal>();
     }
 
     public void updateDealSummary(String summary, Deal deal){

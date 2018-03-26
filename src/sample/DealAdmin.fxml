@@ -88,18 +88,18 @@
                 <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="414.0" prefWidth="411.0" style="-fx-background-color: WHITE;">
                   <children>
-                     <TextField fx:id="txtPromoCode" layoutX="141.0" layoutY="459.0" prefHeight="39.0" prefWidth="252.0" />
+                     <TextField fx:id="txtPromoCode" layoutX="141.0" layoutY="459.0" prefHeight="39.0" prefWidth="252.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" />
                      <Button fx:id="btnReturnLogin" layoutX="272.0" layoutY="528.0" mnemonicParsing="false" onAction="#btnSubmitDeal" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #9FE1B1;" text="Submit Deal" />
                      <Text layoutX="35.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Name" />
                      <Text layoutX="36.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Code" />
-                     <TextField fx:id="txtDealName" layoutX="141.0" layoutY="101.0" prefHeight="39.0" prefWidth="252.0" />
+                     <TextField fx:id="txtDealName" layoutX="141.0" layoutY="101.0" prefHeight="39.0" prefWidth="252.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" />
                      <Text layoutX="35.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="90.205078125" />
                      <Text layoutX="36.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="87.205078125" />
                      <Text layoutX="35.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary" wrappingWidth="84.205078125" />
-                     <TextArea fx:id="txtSummary" layoutX="141.0" layoutY="306.0" prefHeight="131.0" prefWidth="252.0" />
-                     <DatePicker fx:id="StartDate" layoutX="141.0" layoutY="165.0" prefHeight="39.0" prefWidth="252.0" />
-                     <DatePicker fx:id="EndDate" layoutX="141.0" layoutY="239.0" prefHeight="39.0" prefWidth="252.0" />
-                     <TextField fx:id="txtEstabName" layoutX="141.0" layoutY="39.0" prefHeight="39.0" prefWidth="250.0" />
+                     <TextArea fx:id="txtSummary" layoutX="141.0" layoutY="306.0" prefHeight="131.0" prefWidth="252.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" />
+                     <DatePicker fx:id="StartDate" layoutX="141.0" layoutY="165.0" prefHeight="39.0" prefWidth="252.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" />
+                     <DatePicker fx:id="EndDate" layoutX="141.0" layoutY="239.0" prefHeight="39.0" prefWidth="252.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" />
+                     <TextField fx:id="txtEstabName" layoutX="141.0" layoutY="39.0" prefHeight="39.0" prefWidth="250.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" />
                      <Text layoutX="32.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estab name" wrappingWidth="96.205078125" />
                      <CheckBox fx:id="chkNewEstab" layoutX="46.0" layoutY="534.0" mnemonicParsing="false" text="New To Us?" />
                      <AnchorPane fx:id="addEstabPop" layoutX="77.0" layoutY="93.0" prefHeight="332.0" prefWidth="275.0" style="-fx-background-color: WHITE; -fx-border-color: #9fe1b1; -fx-border-width: 10px;" visible="false">

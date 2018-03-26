@@ -36,7 +36,10 @@ public class DealAdminController {
     TextField txtAddEstabDesc;
 
     public void btnSubmitDeal(ActionEvent actionEvent){
-    if(chkNewEstab.isSelected()) { addNewEstab(); }
+    if(chkNewEstab.isSelected()) {
+        addNewEstab();
+        chkNewEstab.setSelected(false);
+        return;}
     LocalDate sDate = StartDate.getValue();
     Calendar c1 = Calendar.getInstance();
     c1.set(sDate.getYear(),sDate.getMonthValue()-1,sDate.getDayOfMonth());
@@ -49,6 +52,7 @@ public class DealAdminController {
     Date end = c2.getTime();
 
     Deal nDeal = new Deal(txtDealName.getText(),start,end,txtPromoCode.getText(),txtSummary.getText(),txtEstabName.getText());
+    System.out.println("Submitted");
     }
 
     public void addNewEstab(){
@@ -56,8 +60,12 @@ public class DealAdminController {
     }
 
     public void submitNewEstab(ActionEvent actionEvent){
+        System.out.println("REached");
         Catalogue cat = Catalogue.getInstance();
+        System.out.println("REached2");
         cat.addEstablishment(txtAddEstabName.getText(), txtAddEstabDesc.getText());
+        System.out.println("REached4");
         addEstabPop.setVisible(false);
+        System.out.println("REached5");
     }
 }
