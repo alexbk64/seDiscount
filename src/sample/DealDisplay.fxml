@@ -20,8 +20,8 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField editable="false" layoutX="-37.0" layoutY="-6.0" prefHeight="37.0" prefWidth="147.0" promptText="Establishment" scaleX="2.0" scaleY="2.0" translateX="125.0" translateY="50.0" />
-                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="-187.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true" x="500.0" y="25.0">
+                        <TextField fx:id="txtEstabName" editable="false" layoutX="-37.0" layoutY="-6.0" prefHeight="37.0" prefWidth="147.0" promptText="Establishment" scaleX="2.0" scaleY="2.0" translateX="125.0" translateY="50.0" />
+                        <ImageView fx:id="imgEstabLogo" fitHeight="100.0" fitWidth="100.0" layoutX="-187.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true" x="500.0" y="25.0">
                            <image>
                               <Image url="@../images/stock-vector-example-stamp-424524877.jpg" />
                            </image>
@@ -30,7 +30,7 @@
                         <TextField fx:id="activeDealLink" editable="false" layoutX="62.0" layoutY="415.0" minHeight="30.0" minWidth="300.0" text="Active Promotions/Discounts" />
                         <TextFlow layoutX="9.0" layoutY="154.0" prefHeight="243.0" prefWidth="403.0">
                            <children>
-                              <TextField editable="false" minHeight="247.0" minWidth="405.0" prefHeight="247.0" prefWidth="405.0" promptText="Large Area of Information about the establishment" />
+                              <TextField fx:id="txtEstabDesc" editable="false" minHeight="247.0" minWidth="405.0" prefHeight="247.0" prefWidth="405.0" promptText="Large Area of Information about the establishment" />
                            </children></TextFlow>
                         <Button fx:id="btnReturn" layoutX="23.0" layoutY="506.0" mnemonicParsing="false" onAction="#returnLogin" style="-fx-background-color: #9FE1B1;" text="&lt;" />
                      </children></AnchorPane>

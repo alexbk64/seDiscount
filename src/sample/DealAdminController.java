@@ -3,11 +3,9 @@ package sample;
 import java.util.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -34,6 +32,17 @@ public class DealAdminController {
     TextField txtAddEstabName;
     @FXML
     TextField txtAddEstabDesc;
+    @FXML
+    Button loadDeals;
+    @FXML
+    AnchorPane loadPop;
+    @FXML
+    TextField loadName;
+    @FXML
+    Button findDeals;
+    @FXML
+    Text desc1, desc2, desc3, desc4, desc5, desc6, desc7, desc8;
+
 
     public void btnSubmitDeal(ActionEvent actionEvent){
     if(chkNewEstab.isSelected()) {
@@ -60,12 +69,23 @@ public class DealAdminController {
     }
 
     public void submitNewEstab(ActionEvent actionEvent){
-        System.out.println("REached");
+        //System.out.println("REached");
         Catalogue cat = Catalogue.getInstance();
-        System.out.println("REached2");
+        //System.out.println("REached2");
         cat.addEstablishment(txtAddEstabName.getText(), txtAddEstabDesc.getText());
-        System.out.println("REached4");
+        //System.out.println("REached4");
         addEstabPop.setVisible(false);
-        System.out.println("REached5");
+        //System.out.println("REached5");
+    }
+
+    public void btnLoadDeals(){
+        loadPop.setVisible(true);
+    }
+
+    public void btnFindDeals(){
+        loadPop.setVisible(false);
+        Catalogue cat = Catalogue.getInstance();
+        Establishment est = cat.findEstablishmentByName(loadName.getText());
+
     }
 }

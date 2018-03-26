@@ -7,11 +7,20 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class DealDisplayController {
     @FXML
     Button btnReturn;
+    @FXML
+    TextField txtEstabName;
+    @FXML
+    TextField txtEstabDesc;
+    @FXML
+    ImageView imgEstabLogo;
+
     public void returnLogin(ActionEvent actionEvent) throws Exception {
         //System.out.print("Reached showdeal");
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
