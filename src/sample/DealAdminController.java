@@ -3,15 +3,22 @@ package sample;
 import java.util.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.time.LocalDate;
 import java.util.Calendar;
 
 public class DealAdminController {
+    @FXML
+    Button btnLoginP;
     @FXML
     TextField txtEstabName;
     @FXML
@@ -70,7 +77,7 @@ public class DealAdminController {
         PrintWriter outputStream = new PrintWriter("src/test/"+txtDealName.getText()+".txt","UTF-8");
         outputStream.println(txtDealName.getText());
         outputStream.println(txtSummary.getText());
-        outputStream.println(txtPromoCode);
+        outputStream.println(txtPromoCode.getText());
         outputStream.println(start);
         outputStream.println(end);
         outputStream.close(); }
@@ -145,4 +152,13 @@ public class DealAdminController {
         }
     }
 
+    public void returnLogin(ActionEvent actionEvent) throws Exception {
+        //System.out.print("Reached showdeal");
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Scene nScene = new Scene(root);
+        Stage primaryStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        //primaryStage.hide();
+        primaryStage.setScene(nScene);
+        //primaryStage.show();
+    }
 }

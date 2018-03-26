@@ -7,9 +7,14 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import java.io.*;
 
 public class DealDisplayController {
     @FXML
@@ -20,6 +25,25 @@ public class DealDisplayController {
     TextField txtEstabDesc;
     @FXML
     ImageView imgEstabLogo;
+    @FXML
+    AnchorPane anchDeal;
+    @FXML
+    AnchorPane anchDealList;
+    @FXML
+    Button btnShowDeals;
+    @FXML
+    Button btnRedeem;
+    Deal crtDeal;
+    @FXML
+    Label l1;
+    @FXML
+    Label l2;
+    @FXML
+    Button viewDrink;
+    @FXML
+    Button viewFood;
+    @FXML
+    TextArea taView;
 
     public void returnLogin(ActionEvent actionEvent) throws Exception {
         //System.out.print("Reached showdeal");
@@ -30,4 +54,32 @@ public class DealDisplayController {
         primaryStage.setScene(nScene);
         //primaryStage.show();
     }
+
+    public void displayAll(ActionEvent actionEvent) throws Exception {
+        l1.setText("drink");
+        viewDrink.setVisible(true);
+        l2.setText("food");
+        viewFood.setVisible(true);
+    }
+
+    public void viewDrinkDeal() throws IOException{
+        BufferedReader inStream = new BufferedReader(new FileReader("src/test/drink.txt"));
+        String d = "";
+        for(int i=1;i<=5;i++) {d += inStream.readLine() + "\n";}
+        inStream.close();
+        taView.setText(d);
+    }
+
+    public void viewFoodDeal(){
+        BufferedReader inStream = new BufferedReader(new FileReader("src/test/food.txt"));
+        String d = "";
+        for(int i=1;i<=5;i++) {d += inStream.readLine() + "\n";}
+        inStream.close();
+        taView.setText(d);
+    }
+
+    public void redeemDeal(ActionEvent actionEvent) throws Exception {
+        
+    }
+
 }

@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -20,7 +21,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="txtEstabName" editable="false" layoutX="-37.0" layoutY="-6.0" prefHeight="37.0" prefWidth="147.0" promptText="Establishment" scaleX="2.0" scaleY="2.0" translateX="125.0" translateY="50.0" />
+                        <TextField fx:id="txtEstabName" editable="false" layoutX="-37.0" layoutY="-6.0" prefHeight="37.0" prefWidth="147.0" promptText="Establishment" scaleX="2.0" scaleY="2.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;" translateX="125.0" translateY="50.0" />
                         <ImageView fx:id="imgEstabLogo" fitHeight="100.0" fitWidth="100.0" layoutX="-187.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true" x="500.0" y="25.0">
                            <image>
                               <Image url="@../images/stock-vector-example-stamp-424524877.jpg" />
@@ -30,7 +31,7 @@
                         <TextField fx:id="activeDealLink" editable="false" layoutX="62.0" layoutY="415.0" minHeight="30.0" minWidth="300.0" text="Active Promotions/Discounts" />
                         <TextFlow layoutX="9.0" layoutY="154.0" prefHeight="243.0" prefWidth="403.0">
                            <children>
-                              <TextField fx:id="txtEstabDesc" editable="false" minHeight="247.0" minWidth="405.0" prefHeight="247.0" prefWidth="405.0" promptText="Large Area of Information about the establishment" />
+                              <TextField fx:id="txtEstabDesc" editable="false" minHeight="140.0" minWidth="401.0" prefHeight="140.0" prefWidth="401.0" promptText="Large Area of Information about the establishment" style="-fx-border-color: #9fe1b1; -fx-border-width: 2px;" />
                            </children></TextFlow>
                         <Button fx:id="btnReturn" layoutX="23.0" layoutY="506.0" mnemonicParsing="false" onAction="#returnLogin" style="-fx-background-color: #9FE1B1;" text="&lt;" />
                      </children></AnchorPane>
@@ -40,17 +41,29 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="555.0" prefWidth="678.0">
                      <children>
-                        <Label layoutY="49.0" text="Deals Near:">
+                        <Label layoutY="14.0" text="Deals Near:">
                            <font>
                               <Font name="System Bold" size="34.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="183.0" layoutY="54.0" minHeight="40.0" minWidth="200.0" promptText="Location of User" />
-                        <ScrollPane layoutX="5.0" layoutY="147.0" prefHeight="262.0" prefWidth="410.0">
+                        <TextField layoutX="183.0" layoutY="19.0" minHeight="40.0" minWidth="200.0" promptText="Location of User" />
+                        <ScrollPane layoutX="5.0" layoutY="295.0" prefHeight="209.0" prefWidth="410.0">
                           <content>
-                            <AnchorPane fx:id="anchDeal" minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="403.0" />
+                            <AnchorPane fx:id="anchDeal" minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="402.0" style="-fx-border-color: #9fe1b1; -fx-border-width: 3px;">
+                                 <children>
+                                    <TextArea fx:id="taView" layoutX="14.0" layoutY="10.0" prefHeight="185.0" prefWidth="374.0" wrapText="true" />
+                                 </children></AnchorPane>
                           </content>
                         </ScrollPane>
+                        <AnchorPane fx:id="anchDealList" layoutX="6.0" layoutY="90.0" prefHeight="138.0" prefWidth="409.0" style="-fx-border-color: #9fe1b1;">
+                           <children>
+                              <Label fx:id="l1" layoutX="14.0" layoutY="28.0" prefHeight="27.0" prefWidth="95.0" />
+                              <Label fx:id="l2" layoutX="21.0" layoutY="90.0" prefHeight="27.0" prefWidth="94.0" />
+                              <Button fx:id="viewDrink" layoutX="152.0" layoutY="22.0" mnemonicParsing="false" onAction="#viewDrinkDeal" style="-fx-background-color: #9fe1b1;" text="View" visible="false" />
+                              <Button fx:id="viewFood" layoutX="152.0" layoutY="84.0" mnemonicParsing="false" onAction="#viewFoodDeal" style="-fx-background-color: #9fe1b1;" text="View" visible="false" />
+                           </children></AnchorPane>
+                        <Button fx:id="btnShowDeals" layoutX="225.0" layoutY="239.0" mnemonicParsing="false" onAction="#displayAll" prefHeight="39.0" prefWidth="162.0" style="-fx-background-color: #9fe1b1;" text="Show Deals" />
+                        <Button fx:id="btnRedeem" layoutX="256.0" layoutY="504.0" mnemonicParsing="false" onAction="#redeemDeal" prefHeight="39.0" prefWidth="143.0" style="-fx-background-color: #9fe1b1;" text="Redeem" />
                      </children></AnchorPane>
             </content>
           </Tab>
