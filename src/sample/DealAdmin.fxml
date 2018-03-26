@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="420.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <TabPane layoutY="-1.0" prefHeight="640.0" prefWidth="420.0" style="-fx-border-color: #9fe1b1; -fx-background-color: WHITE;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Current Deals">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+                  <children>
+                     <ListView fixedCellSize="2.0" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: WHITE;" />
+                     <ButtonBar layoutY="6.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 1" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="58.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 2" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="110.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 3" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="162.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 4" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="214.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 5" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="266.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 6" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="318.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 7" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="370.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 8" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="422.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 9" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                     <ButtonBar layoutY="474.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
+                        <buttons>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 10" wrappingWidth="283.13671875" />
+                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                        </buttons>
+                     </ButtonBar>
+                  </children></AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="Add Deal">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="414.0" prefWidth="411.0" style="-fx-background-color: WHITE;">
+                  <children>
+                     <TextField fx:id="txtPromoCode" layoutX="141.0" layoutY="439.0" prefHeight="39.0" prefWidth="252.0" />
+                     <Button layoutX="272.0" layoutY="528.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #9FE1B1;" text="Submit Deal" />
+                     <Text layoutX="36.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Name" />
+                     <Text layoutX="36.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Code" />
+                     <TextField fx:id="txtDealName" layoutX="141.0" layoutY="32.0" prefHeight="39.0" prefWidth="252.0" />
+                     <Text layoutX="36.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="90.205078125" />
+                     <Text layoutX="36.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="87.205078125" />
+                     <Text layoutX="35.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary" wrappingWidth="84.205078125" />
+                     <TextArea fx:id="txtSummary" layoutX="141.0" layoutY="261.0" prefHeight="131.0" prefWidth="252.0" />
+                     <DatePicker fx:id="StartDate" layoutX="141.0" layoutY="112.0" prefHeight="39.0" prefWidth="252.0" />
+                     <DatePicker fx:id="EndDate" layoutX="141.0" layoutY="189.0" prefHeight="39.0" prefWidth="252.0" />
+                  </children></AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+    </TabPane>
+
+</AnchorPane>
