@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutEstb">
+   <children>
+      <TextField minWidth="250.0" scaleX="2.0" scaleY="2.0" text="Establishment" translateX="125.0" translateY="50.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="500.0" y="25.0">
+         <image>
+            <Image url="@../images/stock-vector-example-stamp-424524877.jpg" />
+         </image>
+      </ImageView>
+      <TextField minHeight="250.0" minWidth="450.0" text="Large Area of Information about the establishment" translateY="100.0" />
+      <Label layoutX="500.0" layoutY="110.0" text="Logo of Estb" />
+      <ScrollBar layoutX="600.0" layoutY="150.0" minHeight="200.0" orientation="VERTICAL" />
+      <Label layoutX="475.0" layoutY="200.0" text="Scroll bar for images" />
+      <TextField layoutY="350.0" minHeight="30.0" minWidth="300.0" text="Active Promotions/Discounts" />
+   </children>
+</AnchorPane>
