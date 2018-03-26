@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="420.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="420.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DealAdminController">
     <TabPane layoutY="-1.0" prefHeight="640.0" prefWidth="420.0" style="-fx-border-color: #9fe1b1; -fx-background-color: WHITE;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
             <Tab text="Current Deals">
@@ -87,7 +87,7 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="414.0" prefWidth="411.0" style="-fx-background-color: WHITE;">
                   <children>
                      <TextField fx:id="txtPromoCode" layoutX="141.0" layoutY="439.0" prefHeight="39.0" prefWidth="252.0" />
-                     <Button layoutX="272.0" layoutY="528.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #9FE1B1;" text="Submit Deal" />
+                     <Button fx:id="btnReturnLogin" layoutX="272.0" layoutY="528.0" mnemonicParsing="false" onAction="#btnSubmitDeal" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #9FE1B1;" text="Submit Deal" />
                      <Text layoutX="36.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Name" />
                      <Text layoutX="36.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Code" />
                      <TextField fx:id="txtDealName" layoutX="141.0" layoutY="32.0" prefHeight="39.0" prefWidth="252.0" />
