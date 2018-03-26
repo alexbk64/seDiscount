@@ -41,4 +41,6 @@ public class Establishment {
     public String getName() {
         return name;
     }
+
+    public ArrayList<Deal> getDeals() { return deals; }
 }

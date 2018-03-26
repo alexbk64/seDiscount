@@ -40,11 +40,15 @@ public class DealAdminController {
     TextField loadName;
     @FXML
     Button findDeals;
+    //ArrayList<Text> descs = new ArrayList<Text>();
     @FXML
     Text desc1, desc2, desc3, desc4, desc5, desc6, desc7, desc8;
+    //ArrayList<Button> btns = new ArrayList<Button>();
+    @FXML
+    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8;
 
 
-    public void btnSubmitDeal(ActionEvent actionEvent){
+    public void btnSubmitDeal(ActionEvent actionEvent) throws IOException {
     if(chkNewEstab.isSelected()) {
         addNewEstab();
         chkNewEstab.setSelected(false);
@@ -61,6 +65,26 @@ public class DealAdminController {
     Date end = c2.getTime();
 
     Deal nDeal = new Deal(txtDealName.getText(),start,end,txtPromoCode.getText(),txtSummary.getText(),txtEstabName.getText());
+        File f = new File("src/test/"+txtDealName.getText()+".txt");
+        if(f.exists()){
+        PrintWriter outputStream = new PrintWriter("src/test/"+txtDealName.getText()+".txt","UTF-8");
+        outputStream.println(txtDealName.getText());
+        outputStream.println(txtSummary.getText());
+        outputStream.println(txtPromoCode);
+        outputStream.println(start);
+        outputStream.println(end);
+        outputStream.close(); }
+        else {
+            File newF = new File("src/test/"+txtDealName.getText()+".txt");
+            newF.createNewFile();
+            PrintWriter outputStream = new PrintWriter("src/test/"+txtDealName.getText()+".txt","UTF-8");
+            outputStream.println(txtDealName.getText());
+            outputStream.println(txtSummary.getText());
+            outputStream.println(txtPromoCode.getText());
+            outputStream.println(start);
+            outputStream.println(end);
+            outputStream.close();
+        }
     System.out.println("Submitted");
     }
 
@@ -68,7 +92,7 @@ public class DealAdminController {
         addEstabPop.setVisible(true);
     }
 
-    public void submitNewEstab(ActionEvent actionEvent){
+    public void submitNewEstab(ActionEvent actionEvent) throws IOException{
         //System.out.println("REached");
         Catalogue cat = Catalogue.getInstance();
         //System.out.println("REached2");
@@ -86,6 +110,39 @@ public class DealAdminController {
         loadPop.setVisible(false);
         Catalogue cat = Catalogue.getInstance();
         Establishment est = cat.findEstablishmentByName(loadName.getText());
-
+        ArrayList<Deal> deals = est.getDeals();
+        if(deals.size()>0){
+            int x =0;
+            for(Deal d: deals) {
+                x = deals.indexOf(d);
+                switch (x+1) {
+                    case 1:
+                        desc1.setText(d.getName());
+                        break;
+                    case 2:
+                        desc2.setText(d.getName());
+                        break;
+                    case 3:
+                        desc3.setText(d.getName());
+                        break;
+                    case 4:
+                        desc4.setText(d.getName());
+                        break;
+                    case 5:
+                        desc5.setText(d.getName());
+                        break;
+                    case 6:
+                        desc6.setText(d.getName());
+                        break;
+                    case 7:
+                        desc7.setText(d.getName());
+                        break;
+                    case 8:
+                        desc8.setText(d.getName());
+                        break;
+                }
+            }
+        }
     }
+
 }

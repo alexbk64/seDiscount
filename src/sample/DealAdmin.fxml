@@ -24,53 +24,53 @@
                      <ButtonBar layoutY="6.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
                         <buttons>
                            <Text fx:id="desc1" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 1" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn1" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <ButtonBar layoutY="58.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
                         <buttons>
                            <Text fx:id="desc2" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 2" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn2" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <ButtonBar layoutY="110.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
                         <buttons>
                            <Text fx:id="desc3" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 3" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn3" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <ButtonBar layoutY="162.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
                         <buttons>
                            <Text fx:id="desc4" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 4" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn4" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <ButtonBar layoutY="214.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
                         <buttons>
                            <Text fx:id="desc5" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 5" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn5" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <ButtonBar layoutY="266.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
                         <buttons>
                            <Text fx:id="desc6" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 6" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn6" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <ButtonBar layoutY="318.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: WHITE;">
                         <buttons>
                            <Text fx:id="desc7" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 7" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn7" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <ButtonBar layoutY="370.0" prefHeight="52.0" prefWidth="420.0" style="-fx-background-color: #9FE1B1;">
                         <buttons>
                            <Text fx:id="desc8" strokeType="OUTSIDE" strokeWidth="0.0" text="Deal Description 8" wrappingWidth="283.13671875" />
-                           <Button blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
+                           <Button fx:id="btn8" blendMode="DARKEN" mnemonicParsing="false" text="&gt;" />
                         </buttons>
                      </ButtonBar>
                      <Button fx:id="loadDeals" layoutX="117.0" layoutY="448.0" mnemonicParsing="false" onAction="#btnLoadDeals" prefHeight="39.0" prefWidth="184.0" style="-fx-background-color: #9fe1b1;" text="Load Deals" />
-                     <AnchorPane fx:id="loadPop" layoutX="4.0" layoutY="504.0" prefHeight="68.0" prefWidth="400.0">
+                     <AnchorPane fx:id="loadPop" layoutX="4.0" layoutY="504.0" prefHeight="68.0" prefWidth="400.0" visible="false">
                         <children>
                            <Label layoutY="7.0" prefHeight="57.0" prefWidth="97.0" text="Enter Estab Name" textAlignment="CENTER" wrapText="true" />
                            <TextField fx:id="loadName" layoutX="97.0" layoutY="15.0" style="-fx-border-color: #9fe1b1;" />

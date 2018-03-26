@@ -37,10 +37,10 @@ public class Catalogue {
     }
 
     public void addEstablishment(String name, String description){
-        System.out.println("problem1");
+        //System.out.println("problem1");
         Establishment est = new Establishment(name, description);
-        System.out.println("problem2");
+        //System.out.println("problem2");
         establishmentList.add(est);
-        System.out.println("problem3");
+        //System.out.println("problem3");
     }
 }
