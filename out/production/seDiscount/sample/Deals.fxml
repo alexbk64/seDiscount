@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Deals">
+   <children>
+      <Label layoutY="75.0" text="Deals Near:">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutY="350.0" text="Clicking on a deal will take you to the establishment page" />
+      <TextField text="Hello &quot;Username&quot;" />
+      <TextField layoutX="200.0" layoutY="80.0" minHeight="40.0" minWidth="200.0" text="Location of User" />
+      <ScrollPane layoutY="125.0" minHeight="200.0" minWidth="600.0" prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+              <fx:script>
+                  function Estb()
+                  {
+                  window.location.href='AboutEstb.fxml';
+                  }
+              </fx:script>
+
+               <children>
+                  <MenuButton layoutX="386.0" minWidth="200.0" mnemonicParsing="false" text="Filters">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Sort by nearest" />
+                      <MenuItem mnemonicParsing="false" text="Sort by discounts" />
+                    </items>
+                  </MenuButton>
+                  <Label id="Label" fx:id="Estb1" minWidth="300.0" text="Deal 1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <Button mnemonicParsing="false" text="Go To" onMouseClicked="Estb()"/>
+                     </graphic>
+                  </Label>
+                  <Label id="Label" fx:id="Estb2" layoutY="30.0" minWidth="300.0" text="Deal 2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <Button mnemonicParsing="false" text="Go to" onMouseClicked="Estb()"/>
+                     </graphic>
+                  </Label>
+                  <Label id="Label" fx:id="Estb3" layoutY="60.0" minWidth="300.0" text="Deal 3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <Button mnemonicParsing="false" text="Go to" onMouseClicked="Estb()"/>
+                     </graphic>
+                  </Label>
+                  <Label id="Label" fx:id="Estb4" layoutY="90.0" minWidth="300.0" text="Deal 4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <Button mnemonicParsing="false" text="Go to" onMouseClicked="Estb()"/>
+                     </graphic>
+                  </Label>
+                  <Label id="Label" fx:id="Estb5" layoutY="120.0" minWidth="300.0" text="Deal 5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <Button mnemonicParsing="false" text="Go to" onMouseClicked="Estb()"/>
+                     </graphic>
+                  </Label>
+                  <Label id="Label" fx:id="Estb6" layoutY="150.0" minWidth="300.0" text="Deal 6">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <Button mnemonicParsing="false" text="Go to" onMouseClicked="Estb()" />
+                     </graphic>
+                  </Label>
+               </children>
+          </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

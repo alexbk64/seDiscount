@@ -9,6 +9,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutEstb">
+   <fx:script>
+      function Back()
+      {
+      window.location.href='Deals.fxml';
+      }
+   </fx:script>
+
    <children>
       <TextField minWidth="250.0" scaleX="2.0" scaleY="2.0" text="Establishment" translateX="125.0" translateY="50.0" />
       <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="500.0" y="25.0">
@@ -22,11 +29,7 @@
       <Label layoutX="475.0" layoutY="200.0" text="Scroll bar for images" />
       <TextField layoutY="350.0" minHeight="30.0" minWidth="300.0" text="Active Promotions/Discounts" />
       <Button layoutX="549.0" layoutY="360.0" mnemonicParsing="false" text="Go back" onMouseClicked="Back()" />
-       <fx:script type="text/javascript">
-           function Back()
-           {
-           window.location.href='Deals.fxml';
-           }
-       </fx:script>
    </children>
+
+
 </AnchorPane>
